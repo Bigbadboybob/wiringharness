@@ -1131,6 +1131,33 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	CAN_MOC [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">CAN_MOC</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">bus</td>
+   <td balign="left">2-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>CAN_MOC_N</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>CAN_MOC_P</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	Strain_Gauges [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -3149,16 +3176,16 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	ConnectorBoard_J13:p15r:e -- FrontMotorFan:w1:w
+	ConnectorBoard_J16:p9r:e -- FrontMotorFan:w1:w
 	FrontMotorFan:w1:e -- Front_Motor_Fan_Connector:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	ConnectorBoard_J13:p28r:e -- FrontMotorFan:w2:w
+	ConnectorBoard_J16:p10r:e -- FrontMotorFan:w2:w
 	FrontMotorFan:w2:e -- Front_Motor_Fan_Connector:p1l:w
 	edge [color="#000000:#000000:#000000"]
-	ConnectorBoard_J13:p34r:e -- FrontMotorFan:w3:w
+	ConnectorBoard_J16:p6r:e -- FrontMotorFan:w3:w
 	FrontMotorFan:w3:e -- Front_Motor_Fan_Connector:p2l:w
 	edge [color="#000000:#000000:#000000"]
-	ConnectorBoard_J13:p35r:e -- FrontMotorFan:w4:w
+	ConnectorBoard_J16:p8r:e -- FrontMotorFan:w4:w
 	FrontMotorFan:w4:e -- Front_Motor_Fan_Connector:p2l:w
 	FrontMotorFan [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -3176,7 +3203,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ConnectorBoard_J13:15</td>
+    <td>ConnectorBoard_J16:9:J</td>
     <td>
      1:RD:LOAD1
     </td>
@@ -3192,7 +3219,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ConnectorBoard_J13:28</td>
+    <td>ConnectorBoard_J16:10:K</td>
     <td>
      2:RD:LOAD1
     </td>
@@ -3208,7 +3235,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ConnectorBoard_J13:34</td>
+    <td>ConnectorBoard_J16:6:F</td>
     <td>
      3:BK:CHASS_GND
     </td>
@@ -3224,7 +3251,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ConnectorBoard_J13:35</td>
+    <td>ConnectorBoard_J16:8:H</td>
     <td>
      4:BK:CHASS_GND
     </td>
@@ -3255,6 +3282,18 @@ graph {
 	RearMotorFan:w3:e -- Rear_Motor_Fan_Connector:p2l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J13:p37r:e -- RearMotorFan:w4:w
+	RearMotorFan:w4:e -- Rear_Motor_Fan_Connector:p2l:w
+	edge [color="#000000:#ff0000:#000000"]
+	ConnectorBoard_J16:p1r:e -- RearMotorFan:w1:w
+	RearMotorFan:w1:e -- Rear_Motor_Fan_Connector:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	ConnectorBoard_J16:p2r:e -- RearMotorFan:w2:w
+	RearMotorFan:w2:e -- Rear_Motor_Fan_Connector:p1l:w
+	edge [color="#000000:#000000:#000000"]
+	ConnectorBoard_J16:p4r:e -- RearMotorFan:w3:w
+	RearMotorFan:w3:e -- Rear_Motor_Fan_Connector:p2l:w
+	edge [color="#000000:#000000:#000000"]
+	ConnectorBoard_J16:p5r:e -- RearMotorFan:w4:w
 	RearMotorFan:w4:e -- Rear_Motor_Fan_Connector:p2l:w
 	RearMotorFan [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -3341,7 +3380,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	ConnectorBoard_J13:p17r:e -- FrontPump:w1:w
+	ConnectorBoard_J13:p18r:e -- FrontPump:w1:w
 	FrontPump:w1:e -- Front_Pump_Connector:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J13:p30r:e -- FrontPump:w2:w
@@ -3368,7 +3407,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ConnectorBoard_J13:17</td>
+    <td>ConnectorBoard_J13:18</td>
     <td>
      1:RD:LOAD4
     </td>
@@ -3440,7 +3479,7 @@ graph {
 	ConnectorBoard_J13:p1r:e -- RearPump:w1:w
 	RearPump:w1:e -- Rear_Pump_Connector:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	ConnectorBoard_J13:p18r:e -- RearPump:w2:w
+	ConnectorBoard_J13:p19r:e -- RearPump:w2:w
 	RearPump:w2:e -- Rear_Pump_Connector:p1l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J13:p3r:e -- RearPump:w3:w
@@ -3480,7 +3519,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ConnectorBoard_J13:18</td>
+    <td>ConnectorBoard_J13:19</td>
     <td>
      2:RD:LOAD5
     </td>
@@ -3536,10 +3575,10 @@ graph {
 	ConnectorBoard_J13:p2r:e -- ExtraHCLoad:w1:w
 	ExtraHCLoad:w1:e -- Extra_HC_Load_Connector:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	ConnectorBoard_J13:p19r:e -- ExtraHCLoad:w2:w
+	ConnectorBoard_J13:p20r:e -- ExtraHCLoad:w2:w
 	ExtraHCLoad:w2:e -- Extra_HC_Load_Connector:p1l:w
 	edge [color="#000000:#000000:#000000"]
-	ConnectorBoard_J13:p20r:e -- ExtraHCLoad:w3:w
+	ConnectorBoard_J13:p28r:e -- ExtraHCLoad:w3:w
 	ExtraHCLoad:w3:e -- Extra_HC_Load_Connector:p2l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J13:p21r:e -- ExtraHCLoad:w4:w
@@ -3576,7 +3615,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ConnectorBoard_J13:19</td>
+    <td>ConnectorBoard_J13:20</td>
     <td>
      2:RD:LOAD6
     </td>
@@ -3592,7 +3631,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ConnectorBoard_J13:20</td>
+    <td>ConnectorBoard_J13:28</td>
     <td>
      3:BK:CHASS_GND
     </td>
@@ -3753,6 +3792,64 @@ graph {
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffffff:#000000"]
+	ConnectorBoard_J13:p29r:e -- MocBus:w1:w
+	MocBus:w1:e -- CAN_MOC:p1l:w
+	edge [color="#000000:#ffffff:#000000"]
+	ConnectorBoard_J13:p17r:e -- MocBus:w2:w
+	MocBus:w2:e -- CAN_MOC:p2l:w
+	MocBus [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">MocBus</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ConnectorBoard_J13:29</td>
+    <td>
+     1:CAN_MOC_P
+    </td>
+    <td>CAN_MOC:1:CAN_MOC_N</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>ConnectorBoard_J13:17</td>
+    <td>
+     2:CAN_MOC_N
+    </td>
+    <td>CAN_MOC:2:CAN_MOC_P</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -5230,20 +5327,20 @@ graph {
 	ConnectorBoard_J16:p11r:e -- Connector_Board_To_Switch_Box:w1:w
 	Connector_Board_To_Switch_Box:w1:e -- SwitchBox:p1l:w
 	edge [color="#000000:#000000:#000000"]
-	ConnectorBoard_J16:p12r:e -- Connector_Board_To_Switch_Box:w4:w
-	Connector_Board_To_Switch_Box:w4:e -- SwitchBox:p4l:w
+	ConnectorBoard_J16:p12r:e -- Connector_Board_To_Switch_Box:w3:w
+	Connector_Board_To_Switch_Box:w3:e -- SwitchBox:p4l:w
 	edge [color="#000000:#0066ff:#000000"]
 	ConnectorBoard_J16:p7r:e -- Connector_Board_To_Switch_Box:w2:w
 	Connector_Board_To_Switch_Box:w2:e -- SwitchBox:p2l:w
 	edge [color="#000000:#000000:#000000"]
-	ConnectorBoard_J16:p3r:e -- Connector_Board_To_Switch_Box:w5:w
-	Connector_Board_To_Switch_Box:w5:e -- SwitchBox:p5l:w
+	ConnectorBoard_J16:p3r:e -- Connector_Board_To_Switch_Box:w4:w
+	Connector_Board_To_Switch_Box:w4:e -- SwitchBox:p5l:w
 	edge [color="#000000:#ff0000:#000000"]
-	ConnectorBoard_J17:p3r:e -- Connector_Board_To_Switch_Box:w6:w
-	Connector_Board_To_Switch_Box:w6:e -- SwitchBox:p12l:w
+	ConnectorBoard_J17:p3r:e -- Connector_Board_To_Switch_Box:w5:w
+	Connector_Board_To_Switch_Box:w5:e -- SwitchBox:p12l:w
 	edge [color="#000000:#ff0000:#000000"]
-	ConnectorBoard_J17:p2r:e -- Connector_Board_To_Switch_Box:w7:w
-	Connector_Board_To_Switch_Box:w7:e -- SwitchBox:p13l:w
+	ConnectorBoard_J17:p2r:e -- Connector_Board_To_Switch_Box:w6:w
+	Connector_Board_To_Switch_Box:w6:e -- SwitchBox:p13l:w
 	Connector_Board_To_Switch_Box [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -5253,7 +5350,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">7x</td>
+   <td balign="left">6x</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -5292,27 +5389,27 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 3_in --></td>
+    <td>ConnectorBoard_J16:12:M</td>
     <td>
-     3:GN:CHARGE_IN
+     3:BK:CHASS_GND
     </td>
-    <td><!-- 3_out --></td>
+    <td>SwitchBox:4:CHASS_GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>ConnectorBoard_J16:12:M</td>
+    <td>ConnectorBoard_J16:3:C</td>
     <td>
      4:BK:CHASS_GND
     </td>
-    <td>SwitchBox:4:CHASS_GND</td>
+    <td>SwitchBox:5:CHASS_GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
@@ -5324,30 +5421,14 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ConnectorBoard_J16:3:C</td>
-    <td>
-     5:BK:CHASS_GND
-    </td>
-    <td>SwitchBox:5:CHASS_GND</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
     <td>ConnectorBoard_J17:3:C</td>
     <td>
-     6:RD:DCDC_IN12V+
+     5:RD:DCDC_IN12V+
     </td>
     <td>SwitchBox:12:DCDC_IN12V+</td>
    </tr>
    <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w6" height="6">
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
@@ -5358,12 +5439,12 @@ graph {
    <tr>
     <td>ConnectorBoard_J17:2:B</td>
     <td>
-     7:RD:DCDC_IN+
+     6:RD:DCDC_IN+
     </td>
     <td>SwitchBox:13:DCDC_IN+</td>
    </tr>
    <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w7" height="6">
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w6" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
@@ -5530,6 +5611,12 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#00ff00:#000000"]
+	ConnectorBoard_J13:p16r:e -- Connector_Board_To_Master:w6:w
+	Connector_Board_To_Master:w6:e -- AMS_Master:p19l:w
+	edge [color="#000000:#ff8000:#000000"]
+	ConnectorBoard_J13:p15r:e -- Connector_Board_To_Master:w7:w
+	Connector_Board_To_Master:w7:e -- AMS_Master:p20l:w
 	edge [color="#000000:#ffff00:#000000"]
 	ConnectorBoard_J12:p22r:e -- Connector_Board_To_Master:w1:w
 	Connector_Board_To_Master:w1:e -- AMS_Master:p3l:w
@@ -5545,12 +5632,6 @@ graph {
 	edge [color="#000000:#ff8000:#000000"]
 	ConnectorBoard_J14:p18r:e -- Connector_Board_To_Master:w5:w
 	Connector_Board_To_Master:w5:e -- AMS_Master:p8l:w
-	edge [color="#000000:#00ff00:#000000"]
-	ConnectorBoard_J16:p10r:e -- Connector_Board_To_Master:w6:w
-	Connector_Board_To_Master:w6:e -- AMS_Master:p19l:w
-	edge [color="#000000:#ff8000:#000000"]
-	ConnectorBoard_J16:p9r:e -- Connector_Board_To_Master:w7:w
-	Connector_Board_To_Master:w7:e -- AMS_Master:p20l:w
 	Connector_Board_To_Master [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -5647,7 +5728,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ConnectorBoard_J16:10:K</td>
+    <td>ConnectorBoard_J13:16</td>
     <td>
      6:GN:CAN_P
     </td>
@@ -5663,7 +5744,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ConnectorBoard_J16:9:J</td>
+    <td>ConnectorBoard_J13:15</td>
     <td>
      7:OG:CAN_N
     </td>

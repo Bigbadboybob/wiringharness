@@ -26,37 +26,37 @@ connectors:
     type: Autosport
     pincount: 22
   #J12 - PCM Sensors
-  Sensor_A:
+  Brake_Pressure_Sensor_A:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Sensor_B:
+  Brake_Pressure_Sensor_B:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Sensor_C:
+  Flow_Sensor_C:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Sensor_D:
+  Flow_Sensor_D:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Sensor_E:
+  Temp_Sensor_E:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Sensor_F:
+  Temp_Sensor_F:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Sensor_G:
+  Temp_Sensor_G:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
@@ -146,37 +146,43 @@ connectors:
 #J15- PDU output loads
 # will label appropriately as we find loads
 # make sure to change cables and connections too
+
+  CAN_AUX:
+      type: output
+      pincount: 2
+      pinlabels: [CAN_AUX_P, CAN_AUX_N]
+
   Load7:
     type: output
     pincount:  2
     pinlabels: [LOAD7, CHASS_GND]
 
-  Load8:
+  Moc_Right_Load8:
     type: output
     pincount:  2
     pinlabels: [LOAD8, CHASS_GND]
 
-  Load9:
+  Transponder_Load9:
     type: output
     pincount:  2
     pinlabels: [LOAD9, CHASS_GND]
 
-  Load10:
+  Vecnav_Load10:
     type: output
     pincount:  2
     pinlabels: [LOAD10, CHASS_GND]
 
-  Load11:
+  Moc_Left_Load11:
     type: output
     pincount:  2
     pinlabels: [LOAD11, CHASS_GND]
 
-  Load12:
+  AMS_Master_Load12:
     type: output
     pincount:  2
     pinlabels: [LOAD12, CHASS_GND]
 
-  Transponder(Load13):
+  Load13:
     type: output
     pincount:  2
     pinlabels: [LOAD13, CHASS_GND]
@@ -186,7 +192,7 @@ connectors:
     pincount:  2
     pinlabels: [LOAD14, CHASS_GND]
 
-  Dashboard(Load15):
+  Dashboard_Load15:
     type: output
     pincount:  2
     pinlabels: [LOAD15, CHASS_GND]
@@ -211,12 +217,12 @@ connectors:
     pincount:  2
     pinlabels: [LOAD20, CHASS_GND]
 
-  MocLeft(Load21):
+  Load21:
     type: output
     pincount:  2
     pinlabels: [LOAD21, CHASS_GND]
 
-  MocRight(Load24):
+  Load24:
     type: output
     pincount:  2
     pinlabels: [LOAD24, CHASS_GND]
@@ -428,6 +434,11 @@ cables:
 
 #End J14
 #J15
+  CAN_AUX_Cable:
+      wirecount: 2
+      wirelabels: [CAN_AUX_P, CAN_AUX_N]
+      color: [GN, OG]
+
   Load7_Cable:
     wirecount: 2
     wirelabels: [LOAD7, CHASS_GND]
@@ -564,39 +575,39 @@ connections:
 
 #J12
 -
-  -  ConnectorBoard_J12:  [2, 1, 15]
+  - ConnectorBoard_J12:  [2, 1, 15]
   - Sensor_A_Cable: [1, 2, 3]
-  - Sensor_A: [1, 2, 3]
+  - Brake_Pressure_Sensor_A: [1, 2, 3]
 
 -
-  -  ConnectorBoard_J12:  [4, 3, 16]
+  - ConnectorBoard_J12:  [4, 3, 16]
   - Sensor_B_Cable: [1, 2, 3]
-  - Sensor_B: [1, 2, 3]
+  - Brake_Pressure_Sensor_B: [1, 2, 3]
 
 -
-  -  ConnectorBoard_J12:  [6, 5, 17]
+  - ConnectorBoard_J12:  [6, 5, 17]
   - Sensor_C_Cable: [1, 2, 3]
-  - Sensor_C: [1, 2, 3]
+  - Flow_Sensor_C: [1, 2, 3]
 
 -
-  -  ConnectorBoard_J12:  [8, 7, 18]
+  - ConnectorBoard_J12:  [8, 7, 18]
   - Sensor_D_Cable: [1, 2, 3]
-  - Sensor_D: [1, 2, 3]
+  - Flow_Sensor_D: [1, 2, 3]
 
 -
-  -  ConnectorBoard_J12:  [10, 9, 19]
+  - ConnectorBoard_J12:  [10, 9, 19]
   - Sensor_E_Cable: [1, 2, 3]
-  - Sensor_E: [1, 2, 3]
+  - Temp_Sensor_E: [1, 2, 3]
 
 -
-  -  ConnectorBoard_J12:  [12, 11, 20]
+  - ConnectorBoard_J12:  [12, 11, 20]
   - Sensor_F_Cable: [1, 2, 3]
-  - Sensor_F: [1, 2, 3]
+  - Temp_Sensor_F: [1, 2, 3]
 
 -
-  -  ConnectorBoard_J12:  [14, 13, 21]
+  - ConnectorBoard_J12:  [14, 13, 21]
   - Sensor_G_Cable: [1, 2, 3]
-  - Sensor_G: [1, 2, 3]
+  - Temp_Sensor_G: [1, 2, 3]
 
 #End J12
 
@@ -675,29 +686,43 @@ connections:
 
 #J15
 -
+  - ConnectorBoard_J15: [20, 32]
+  - Load7_Cable: [1, 2]
+  - Load7: [1, 2]
+
+-
+  - ConnectorBoard_J15: [2, 3]
+  - CAN_AUX_Cable: [1, 2]
+  - CAN_AUX: [1, 2]
+
+-
+  - ConnectorBoard_J15: [4, 21]
+  - Load8_Cable: [1, 2]
+  - Moc_Right_Load8: [1, 2]
+
   - ConnectorBoard_J15: [5, 22]
   - Load9_Cable: [1, 2]
-  - Load9: [1, 2]
+  - Transponder_Load9: [1, 2]
 
 -
   - ConnectorBoard_J15: [6, 37]
   - Load10_Cable: [1, 2]
-  - Load10: [1, 2]
+  - Vecnav_Load10: [1, 2]
 
 -
   - ConnectorBoard_J15: [7, 23]
   - Load11_Cable: [1, 2]
-  - Load11: [1, 2]
+  - Moc_Left_Load11: [1, 2]
 
 -
   - ConnectorBoard_J15: [8, 33]
   - Load12_Cable: [1, 2]
-  - Load12: [1, 2]
+  - AMS_Master_Load12: [1, 2]
 
 -
   - ConnectorBoard_J15: [9, 24]
   - Load13_Cable: [1, 2]
-  - Transponder(Load13): [1, 2]
+  - Load13: [1, 2]
 
 -
   - ConnectorBoard_J15: [10, 25]
@@ -707,7 +732,7 @@ connections:
 -
   - ConnectorBoard_J15: [11, 34]
   - Load15_Cable: [1, 2]
-  - Dashboard(Load15): [1, 2]
+  - Load15: [1, 2]
 
 -
   - ConnectorBoard_J15: [14, 26]
@@ -732,22 +757,13 @@ connections:
 -
   - ConnectorBoard_J15: [18, 36]
   - Load21_Cable: [1, 2]
-  - MocLeft(Load21): [1, 2]
+  - Load21: [1, 2]
 
 -
   - ConnectorBoard_J15: [19, 31]
   - Load24_Cable: [1, 2]
-  - MocRight(Load24): [1, 2]
+  - Load24: [1, 2]
 
--
-  - ConnectorBoard_J15: [20, 32]
-  - Load7_Cable: [1, 2]
-  - Load7: [1, 2]
-
--
-  - ConnectorBoard_J15: [4, 21]
-  - Load8_Cable: [1, 2]
-  - Load8: [1, 2]
 #End J15
 
 #J16
