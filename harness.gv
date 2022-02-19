@@ -666,11 +666,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Sensor_A [label=<
+	Brake_Pressure_Sensor_A [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Sensor_A</td>
+   <td balign="left">Brake_Pressure_Sensor_A</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -697,11 +697,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Sensor_B [label=<
+	Brake_Pressure_Sensor_B [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Sensor_B</td>
+   <td balign="left">Brake_Pressure_Sensor_B</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -728,11 +728,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Sensor_C [label=<
+	Flow_Sensor_C [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Sensor_C</td>
+   <td balign="left">Flow_Sensor_C</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -759,11 +759,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Sensor_D [label=<
+	Flow_Sensor_D [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Sensor_D</td>
+   <td balign="left">Flow_Sensor_D</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -790,11 +790,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Sensor_E [label=<
+	Temp_Sensor_E [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Sensor_E</td>
+   <td balign="left">Temp_Sensor_E</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -821,11 +821,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Sensor_F [label=<
+	Temp_Sensor_F [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Sensor_F</td>
+   <td balign="left">Temp_Sensor_F</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -852,11 +852,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Sensor_G [label=<
+	Temp_Sensor_G [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Sensor_G</td>
+   <td balign="left">Temp_Sensor_G</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1363,6 +1363,33 @@ graph {
    <tr>
     <td port="p3l">3</td>
     <td>GND</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	CAN_AUX [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">CAN_AUX</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">output</td>
+   <td balign="left">2-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>CAN_AUX_P</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>CAN_AUX_N</td>
    </tr>
   </table>
  </td></tr>
@@ -2522,13 +2549,13 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#0066ff:#000000"]
 	ConnectorBoard_J12:p2r:e -- Sensor_A_Cable:w1:w
-	Sensor_A_Cable:w1:e -- Sensor_A:p1l:w
+	Sensor_A_Cable:w1:e -- Brake_Pressure_Sensor_A:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J12:p1r:e -- Sensor_A_Cable:w2:w
-	Sensor_A_Cable:w2:e -- Sensor_A:p2l:w
+	Sensor_A_Cable:w2:e -- Brake_Pressure_Sensor_A:p2l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J12:p15r:e -- Sensor_A_Cable:w3:w
-	Sensor_A_Cable:w3:e -- Sensor_A:p3l:w
+	Sensor_A_Cable:w3:e -- Brake_Pressure_Sensor_A:p3l:w
 	Sensor_A_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2549,7 +2576,7 @@ graph {
     <td>
      1:BU:FIXED_DIGI4
     </td>
-    <td>Sensor_A:1:Signal</td>
+    <td>Brake_Pressure_Sensor_A:1:Signal</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2565,7 +2592,7 @@ graph {
     <td>
      2:RD:5V_FIXED
     </td>
-    <td>Sensor_A:2:PWR</td>
+    <td>Brake_Pressure_Sensor_A:2:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -2581,7 +2608,7 @@ graph {
     <td>
      3:BK:GND_FIXED
     </td>
-    <td>Sensor_A:3:GND</td>
+    <td>Brake_Pressure_Sensor_A:3:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
@@ -2599,13 +2626,13 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#0066ff:#000000"]
 	ConnectorBoard_J12:p4r:e -- Sensor_B_Cable:w1:w
-	Sensor_B_Cable:w1:e -- Sensor_B:p1l:w
+	Sensor_B_Cable:w1:e -- Brake_Pressure_Sensor_B:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J12:p3r:e -- Sensor_B_Cable:w2:w
-	Sensor_B_Cable:w2:e -- Sensor_B:p2l:w
+	Sensor_B_Cable:w2:e -- Brake_Pressure_Sensor_B:p2l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J12:p16r:e -- Sensor_B_Cable:w3:w
-	Sensor_B_Cable:w3:e -- Sensor_B:p3l:w
+	Sensor_B_Cable:w3:e -- Brake_Pressure_Sensor_B:p3l:w
 	Sensor_B_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2626,7 +2653,7 @@ graph {
     <td>
      1:BU:FIXED_DIGI3
     </td>
-    <td>Sensor_B:1:Signal</td>
+    <td>Brake_Pressure_Sensor_B:1:Signal</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2642,7 +2669,7 @@ graph {
     <td>
      2:RD:5V_FIXED
     </td>
-    <td>Sensor_B:2:PWR</td>
+    <td>Brake_Pressure_Sensor_B:2:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -2658,7 +2685,7 @@ graph {
     <td>
      3:BK:GND_FIXED
     </td>
-    <td>Sensor_B:3:GND</td>
+    <td>Brake_Pressure_Sensor_B:3:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
@@ -2676,13 +2703,13 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#0066ff:#000000"]
 	ConnectorBoard_J12:p6r:e -- Sensor_C_Cable:w1:w
-	Sensor_C_Cable:w1:e -- Sensor_C:p1l:w
+	Sensor_C_Cable:w1:e -- Flow_Sensor_C:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J12:p5r:e -- Sensor_C_Cable:w2:w
-	Sensor_C_Cable:w2:e -- Sensor_C:p2l:w
+	Sensor_C_Cable:w2:e -- Flow_Sensor_C:p2l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J12:p17r:e -- Sensor_C_Cable:w3:w
-	Sensor_C_Cable:w3:e -- Sensor_C:p3l:w
+	Sensor_C_Cable:w3:e -- Flow_Sensor_C:p3l:w
 	Sensor_C_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2703,7 +2730,7 @@ graph {
     <td>
      1:BU:FIXED_DIGI2
     </td>
-    <td>Sensor_C:1:Signal</td>
+    <td>Flow_Sensor_C:1:Signal</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2719,7 +2746,7 @@ graph {
     <td>
      2:RD:5V_FIXED
     </td>
-    <td>Sensor_C:2:PWR</td>
+    <td>Flow_Sensor_C:2:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -2735,7 +2762,7 @@ graph {
     <td>
      3:BK:GND_FIXED
     </td>
-    <td>Sensor_C:3:GND</td>
+    <td>Flow_Sensor_C:3:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
@@ -2753,13 +2780,13 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#0066ff:#000000"]
 	ConnectorBoard_J12:p8r:e -- Sensor_D_Cable:w1:w
-	Sensor_D_Cable:w1:e -- Sensor_D:p1l:w
+	Sensor_D_Cable:w1:e -- Flow_Sensor_D:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J12:p7r:e -- Sensor_D_Cable:w2:w
-	Sensor_D_Cable:w2:e -- Sensor_D:p2l:w
+	Sensor_D_Cable:w2:e -- Flow_Sensor_D:p2l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J12:p18r:e -- Sensor_D_Cable:w3:w
-	Sensor_D_Cable:w3:e -- Sensor_D:p3l:w
+	Sensor_D_Cable:w3:e -- Flow_Sensor_D:p3l:w
 	Sensor_D_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2780,7 +2807,7 @@ graph {
     <td>
      1:BU:FIXED_DIGI1
     </td>
-    <td>Sensor_D:1:Signal</td>
+    <td>Flow_Sensor_D:1:Signal</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2796,7 +2823,7 @@ graph {
     <td>
      2:RD:5V_FIXED
     </td>
-    <td>Sensor_D:2:PWR</td>
+    <td>Flow_Sensor_D:2:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -2812,7 +2839,7 @@ graph {
     <td>
      3:BK:GND_FIXED
     </td>
-    <td>Sensor_D:3:GND</td>
+    <td>Flow_Sensor_D:3:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
@@ -2830,13 +2857,13 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#0066ff:#000000"]
 	ConnectorBoard_J12:p10r:e -- Sensor_E_Cable:w1:w
-	Sensor_E_Cable:w1:e -- Sensor_E:p1l:w
+	Sensor_E_Cable:w1:e -- Temp_Sensor_E:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J12:p9r:e -- Sensor_E_Cable:w2:w
-	Sensor_E_Cable:w2:e -- Sensor_E:p2l:w
+	Sensor_E_Cable:w2:e -- Temp_Sensor_E:p2l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J12:p19r:e -- Sensor_E_Cable:w3:w
-	Sensor_E_Cable:w3:e -- Sensor_E:p3l:w
+	Sensor_E_Cable:w3:e -- Temp_Sensor_E:p3l:w
 	Sensor_E_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2857,7 +2884,7 @@ graph {
     <td>
      1:BU:FIXED_ANA2
     </td>
-    <td>Sensor_E:1:Signal</td>
+    <td>Temp_Sensor_E:1:Signal</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2873,7 +2900,7 @@ graph {
     <td>
      2:RD:5V_FIXED
     </td>
-    <td>Sensor_E:2:PWR</td>
+    <td>Temp_Sensor_E:2:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -2889,7 +2916,7 @@ graph {
     <td>
      3:BK:GND_FIXED
     </td>
-    <td>Sensor_E:3:GND</td>
+    <td>Temp_Sensor_E:3:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
@@ -2907,13 +2934,13 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#0066ff:#000000"]
 	ConnectorBoard_J12:p12r:e -- Sensor_F_Cable:w1:w
-	Sensor_F_Cable:w1:e -- Sensor_F:p1l:w
+	Sensor_F_Cable:w1:e -- Temp_Sensor_F:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J12:p11r:e -- Sensor_F_Cable:w2:w
-	Sensor_F_Cable:w2:e -- Sensor_F:p2l:w
+	Sensor_F_Cable:w2:e -- Temp_Sensor_F:p2l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J12:p20r:e -- Sensor_F_Cable:w3:w
-	Sensor_F_Cable:w3:e -- Sensor_F:p3l:w
+	Sensor_F_Cable:w3:e -- Temp_Sensor_F:p3l:w
 	Sensor_F_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2934,7 +2961,7 @@ graph {
     <td>
      1:BU:FIXED_ANA3
     </td>
-    <td>Sensor_F:1:Signal</td>
+    <td>Temp_Sensor_F:1:Signal</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2950,7 +2977,7 @@ graph {
     <td>
      2:RD:5V_FIXED
     </td>
-    <td>Sensor_F:2:PWR</td>
+    <td>Temp_Sensor_F:2:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -2966,7 +2993,7 @@ graph {
     <td>
      3:BK:GND_FIXED
     </td>
-    <td>Sensor_F:3:GND</td>
+    <td>Temp_Sensor_F:3:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
@@ -2984,13 +3011,13 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#0066ff:#000000"]
 	ConnectorBoard_J12:p14r:e -- Sensor_G_Cable:w1:w
-	Sensor_G_Cable:w1:e -- Sensor_G:p1l:w
+	Sensor_G_Cable:w1:e -- Temp_Sensor_G:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J12:p13r:e -- Sensor_G_Cable:w2:w
-	Sensor_G_Cable:w2:e -- Sensor_G:p2l:w
+	Sensor_G_Cable:w2:e -- Temp_Sensor_G:p2l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J12:p21r:e -- Sensor_G_Cable:w3:w
-	Sensor_G_Cable:w3:e -- Sensor_G:p3l:w
+	Sensor_G_Cable:w3:e -- Temp_Sensor_G:p3l:w
 	Sensor_G_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -3011,7 +3038,7 @@ graph {
     <td>
      1:BU:FIXED_ANA4
     </td>
-    <td>Sensor_G:1:Signal</td>
+    <td>Temp_Sensor_G:1:Signal</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -3027,7 +3054,7 @@ graph {
     <td>
      2:RD:5V_FIXED
     </td>
-    <td>Sensor_G:2:PWR</td>
+    <td>Temp_Sensor_G:2:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -3043,7 +3070,7 @@ graph {
     <td>
      3:BK:GND_FIXED
     </td>
-    <td>Sensor_G:3:GND</td>
+    <td>Temp_Sensor_G:3:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
@@ -4444,6 +4471,64 @@ graph {
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#00ff00:#000000"]
+	ConnectorBoard_J15:p2r:e -- CAN_AUX_Cable:w1:w
+	CAN_AUX_Cable:w1:e -- CAN_AUX:p1l:w
+	edge [color="#000000:#ff8000:#000000"]
+	ConnectorBoard_J15:p3r:e -- CAN_AUX_Cable:w2:w
+	CAN_AUX_Cable:w2:e -- CAN_AUX:p2l:w
+	CAN_AUX_Cable [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">CAN_AUX_Cable</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ConnectorBoard_J15:2</td>
+    <td>
+     1:GN:CAN_AUX_P
+    </td>
+    <td>CAN_AUX:1:CAN_AUX_P</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>ConnectorBoard_J15:3</td>
+    <td>
+     2:OG:CAN_AUX_N
+    </td>
+    <td>CAN_AUX:2:CAN_AUX_N</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff8000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

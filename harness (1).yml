@@ -26,37 +26,37 @@ connectors:
     type: Autosport
     pincount: 22
   #J12 - PCM Sensors
-  Brake_Pressure_Sensor_A:
+  Sensor_A:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Brake_Pressure_Sensor_B:
+  Sensor_B:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Flow_Sensor_C:
+  Sensor_C:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Flow_Sensor_D:
+  Sensor_D:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Temp_Sensor_E:
+  Sensor_E:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Temp_Sensor_F:
+  Sensor_F:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
 
-  Temp_Sensor_G:
+  Sensor_G:
     type: sensor
     pincount: 3
     pinlabels: [Signal, PWR, GND]
@@ -146,12 +146,6 @@ connectors:
 #J15- PDU output loads
 # will label appropriately as we find loads
 # make sure to change cables and connections too
-
-  CAN_AUX:
-      type: output
-      pincount: 2
-      pinlabels: [CAN_AUX_P, CAN_AUX_N]
-
   Load7:
     type: output
     pincount:  2
@@ -434,11 +428,6 @@ cables:
 
 #End J14
 #J15
-  CAN_AUX_Cable:
-      wirecount: 2
-      wirelabels: [CAN_AUX_P, CAN_AUX_N]
-      colors: [GN, OG]
-
   Load7_Cable:
     wirecount: 2
     wirelabels: [LOAD7, CHASS_GND]
@@ -575,39 +564,39 @@ connections:
 
 #J12
 -
-  - ConnectorBoard_J12:  [2, 1, 15]
+  -  ConnectorBoard_J12:  [2, 1, 15]
   - Sensor_A_Cable: [1, 2, 3]
-  - Brake_Pressure_Sensor_A: [1, 2, 3]
+  - Sensor_A: [1, 2, 3]
 
 -
-  - ConnectorBoard_J12:  [4, 3, 16]
+  -  ConnectorBoard_J12:  [4, 3, 16]
   - Sensor_B_Cable: [1, 2, 3]
-  - Brake_Pressure_Sensor_B: [1, 2, 3]
+  - Sensor_B: [1, 2, 3]
 
 -
-  - ConnectorBoard_J12:  [6, 5, 17]
+  -  ConnectorBoard_J12:  [6, 5, 17]
   - Sensor_C_Cable: [1, 2, 3]
-  - Flow_Sensor_C: [1, 2, 3]
+  - Sensor_C: [1, 2, 3]
 
 -
-  - ConnectorBoard_J12:  [8, 7, 18]
+  -  ConnectorBoard_J12:  [8, 7, 18]
   - Sensor_D_Cable: [1, 2, 3]
-  - Flow_Sensor_D: [1, 2, 3]
+  - Sensor_D: [1, 2, 3]
 
 -
-  - ConnectorBoard_J12:  [10, 9, 19]
+  -  ConnectorBoard_J12:  [10, 9, 19]
   - Sensor_E_Cable: [1, 2, 3]
-  - Temp_Sensor_E: [1, 2, 3]
+  - Sensor_E: [1, 2, 3]
 
 -
-  - ConnectorBoard_J12:  [12, 11, 20]
+  -  ConnectorBoard_J12:  [12, 11, 20]
   - Sensor_F_Cable: [1, 2, 3]
-  - Temp_Sensor_F: [1, 2, 3]
+  - Sensor_F: [1, 2, 3]
 
 -
-  - ConnectorBoard_J12:  [14, 13, 21]
+  -  ConnectorBoard_J12:  [14, 13, 21]
   - Sensor_G_Cable: [1, 2, 3]
-  - Temp_Sensor_G: [1, 2, 3]
+  - Sensor_G: [1, 2, 3]
 
 #End J12
 
@@ -685,11 +674,6 @@ connections:
 
 
 #J15
--
-  - ConnectorBoard_J15: [2, 3]
-  - CAN_AUX_Cable: [1, 2]
-  - CAN_AUX: [1, 2]
-
 -
   - ConnectorBoard_J15: [5, 22]
   - Load9_Cable: [1, 2]

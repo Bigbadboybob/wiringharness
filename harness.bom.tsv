@@ -1,5 +1,5 @@
 Id	Description	Qty	Unit	Designators
-1	Cable, 2 wires	0	m	BrakeLight, Charge_In, DCDC_To_Connector_Board, Load10_Cable, Load11_Cable, Load12_Cable, Load13_Cable, Load14_Cable, Load15_Cable, Load16_Cable, Load18_Cable, Load19_Cable, Load20_Cable, Load21_Cable, Load24_Cable, Load7_Cable, Load8_Cable, Load9_Cable, MocBus, RTDS
+1	Cable, 2 wires	0	m	BrakeLight, CAN_AUX_Cable, Charge_In, DCDC_To_Connector_Board, Load10_Cable, Load11_Cable, Load12_Cable, Load13_Cable, Load14_Cable, Load15_Cable, Load16_Cable, Load18_Cable, Load19_Cable, Load20_Cable, Load21_Cable, Load24_Cable, Load7_Cable, Load8_Cable, Load9_Cable, MocBus, RTDS
 2	Cable, 3 wires	0	m	Sensor_A_Cable, Sensor_B_Cable, Sensor_C_Cable, Sensor_D_Cable, Sensor_E_Cable, Sensor_F_Cable, Sensor_G_Cable, Steer_Ang_Bus, TSAL_To_Master
 3	Cable, 4 wires	0	m	DCDC_To_Switch_Box, ExtraHCLoad, FrontMotorFan, FrontPump, RearMotorFan, RearPump
 4	Cable, 6 wires	0	m	Accel_Ang_Bus, Brake_Ang_Bus, Connector_Board_To_Switch_Box, Master_To_Precharge, VectorNav
@@ -19,11 +19,11 @@ Id	Description	Qty	Unit	Designators
 18	Connector, high current load, 2 pins	5		Extra_HC_Load_Connector, Front_Motor_Fan_Connector, Front_Pump_Connector, Rear_Motor_Fan_Connector, Rear_Pump_Connector
 19	Connector, input, 2 pins	2		IMD_XLA+, IMD_XLA-
 20	Connector, input, 8 pins	1		IMD_XKIA
-21	Connector, output, 2 pins	17		Brake_Light_Connector, Dashboard(Load15), Load10, Load11, Load12, Load14, Load16, Load18, Load19, Load20, Load7, Load8, Load9, MocLeft(Load21), MocRight(Load24), RTDS_Connector, Transponder(Load13)
+21	Connector, output, 2 pins	18		Brake_Light_Connector, CAN_AUX, Dashboard(Load15), Load10, Load11, Load12, Load14, Load16, Load18, Load19, Load20, Load7, Load8, Load9, MocLeft(Load21), MocRight(Load24), RTDS_Connector, Transponder(Load13)
 22	Connector, output, 3 pins	1		TSAL
 23	Connector, output, 6 pins	1		DCDC
 24	Connector, relay, 4 pins	3		NEG_AIR, POS_AIR, PRECHARGE_RELAY
 25	Connector, sensor, 10 pins	1		Vector_Nav_Adapter(Load22)
-26	Connector, sensor, 3 pins	12		Accel_Angle_Sensor1, Accel_Angle_Sensor2, Brake_Angle_Sensor1, Brake_Angle_Sensor2, Sensor_A, Sensor_B, Sensor_C, Sensor_D, Sensor_E, Sensor_F, Sensor_G, Steer_Angle_Sensor
+26	Connector, sensor, 3 pins	12		Accel_Angle_Sensor1, Accel_Angle_Sensor2, Brake_Angle_Sensor1, Brake_Angle_Sensor2, Brake_Pressure_Sensor_A, Brake_Pressure_Sensor_B, Flow_Sensor_C, Flow_Sensor_D, Steer_Angle_Sensor, Temp_Sensor_E, Temp_Sensor_F, Temp_Sensor_G
 27	Connector, sensor, 9 pins	1		Strain_Gauges
 28	Connector, switchbox, 13 pins	1		SwitchBox

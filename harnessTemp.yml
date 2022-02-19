@@ -437,7 +437,7 @@ cables:
   CAN_AUX_Cable:
       wirecount: 2
       wirelabels: [CAN_AUX_P, CAN_AUX_N]
-      color: [GN, OG]
+      colors: [GN, OG]
 
   Load7_Cable:
     wirecount: 2
