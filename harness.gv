@@ -1422,11 +1422,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Load8 [label=<
+	Moc_Right_Load8 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Load8</td>
+   <td balign="left">Moc_Right_Load8</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1449,11 +1449,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Load9 [label=<
+	Transponder_Load9 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Load9</td>
+   <td balign="left">Transponder_Load9</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1476,11 +1476,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Load10 [label=<
+	Vecnav_Load10 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Load10</td>
+   <td balign="left">Vecnav_Load10</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1503,11 +1503,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Load11 [label=<
+	Moc_Left_Load11 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Load11</td>
+   <td balign="left">Moc_Left_Load11</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1530,11 +1530,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	Load12 [label=<
+	AMS_Master_Load12 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Load12</td>
+   <td balign="left">AMS_Master_Load12</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1557,11 +1557,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	"Transponder(Load13)" [label=<
+	Load13 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Transponder(Load13)</td>
+   <td balign="left">Load13</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1611,11 +1611,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	"Dashboard(Load15)" [label=<
+	Dashboard_Load15 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Dashboard(Load15)</td>
+   <td balign="left">Dashboard_Load15</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1746,11 +1746,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	"MocLeft(Load21)" [label=<
+	Load21 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">MocLeft(Load21)</td>
+   <td balign="left">Load21</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1773,11 +1773,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	"MocRight(Load24)" [label=<
+	Load24 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">MocRight(Load24)</td>
+   <td balign="left">Load24</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -4598,10 +4598,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J15:p4r:e -- Load8_Cable:w1:w
-	Load8_Cable:w1:e -- Load8:p1l:w
+	Load8_Cable:w1:e -- Moc_Right_Load8:p1l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J15:p21r:e -- Load8_Cable:w2:w
-	Load8_Cable:w2:e -- Load8:p2l:w
+	Load8_Cable:w2:e -- Moc_Right_Load8:p2l:w
 	Load8_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -4622,7 +4622,7 @@ graph {
     <td>
      1:RD:LOAD8
     </td>
-    <td>Load8:1:LOAD8</td>
+    <td>Moc_Right_Load8:1:LOAD8</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -4638,7 +4638,7 @@ graph {
     <td>
      2:BK:CHASS_GND
     </td>
-    <td>Load8:2:CHASS_GND</td>
+    <td>Moc_Right_Load8:2:CHASS_GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -4656,10 +4656,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J15:p5r:e -- Load9_Cable:w1:w
-	Load9_Cable:w1:e -- Load9:p1l:w
+	Load9_Cable:w1:e -- Transponder_Load9:p1l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J15:p22r:e -- Load9_Cable:w2:w
-	Load9_Cable:w2:e -- Load9:p2l:w
+	Load9_Cable:w2:e -- Transponder_Load9:p2l:w
 	Load9_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -4680,7 +4680,7 @@ graph {
     <td>
      1:RD:LOAD9
     </td>
-    <td>Load9:1:LOAD9</td>
+    <td>Transponder_Load9:1:LOAD9</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -4696,7 +4696,7 @@ graph {
     <td>
      2:BK:CHASS_GND
     </td>
-    <td>Load9:2:CHASS_GND</td>
+    <td>Transponder_Load9:2:CHASS_GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -4714,10 +4714,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J15:p6r:e -- Load10_Cable:w1:w
-	Load10_Cable:w1:e -- Load10:p1l:w
+	Load10_Cable:w1:e -- Vecnav_Load10:p1l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J15:p37r:e -- Load10_Cable:w2:w
-	Load10_Cable:w2:e -- Load10:p2l:w
+	Load10_Cable:w2:e -- Vecnav_Load10:p2l:w
 	Load10_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -4738,7 +4738,7 @@ graph {
     <td>
      1:RD:LOAD10
     </td>
-    <td>Load10:1:LOAD10</td>
+    <td>Vecnav_Load10:1:LOAD10</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -4754,7 +4754,7 @@ graph {
     <td>
      2:BK:CHASS_GND
     </td>
-    <td>Load10:2:CHASS_GND</td>
+    <td>Vecnav_Load10:2:CHASS_GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -4772,10 +4772,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J15:p7r:e -- Load11_Cable:w1:w
-	Load11_Cable:w1:e -- Load11:p1l:w
+	Load11_Cable:w1:e -- Moc_Left_Load11:p1l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J15:p23r:e -- Load11_Cable:w2:w
-	Load11_Cable:w2:e -- Load11:p2l:w
+	Load11_Cable:w2:e -- Moc_Left_Load11:p2l:w
 	Load11_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -4796,7 +4796,7 @@ graph {
     <td>
      1:RD:LOAD11
     </td>
-    <td>Load11:1:LOAD11</td>
+    <td>Moc_Left_Load11:1:LOAD11</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -4812,7 +4812,7 @@ graph {
     <td>
      2:BK:CHASS_GND
     </td>
-    <td>Load11:2:CHASS_GND</td>
+    <td>Moc_Left_Load11:2:CHASS_GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -4830,10 +4830,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J15:p8r:e -- Load12_Cable:w1:w
-	Load12_Cable:w1:e -- Load12:p1l:w
+	Load12_Cable:w1:e -- AMS_Master_Load12:p1l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J15:p33r:e -- Load12_Cable:w2:w
-	Load12_Cable:w2:e -- Load12:p2l:w
+	Load12_Cable:w2:e -- AMS_Master_Load12:p2l:w
 	Load12_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -4854,7 +4854,7 @@ graph {
     <td>
      1:RD:LOAD12
     </td>
-    <td>Load12:1:LOAD12</td>
+    <td>AMS_Master_Load12:1:LOAD12</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -4870,7 +4870,7 @@ graph {
     <td>
      2:BK:CHASS_GND
     </td>
-    <td>Load12:2:CHASS_GND</td>
+    <td>AMS_Master_Load12:2:CHASS_GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -4888,10 +4888,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J15:p9r:e -- Load13_Cable:w1:w
-	Load13_Cable:w1:e -- "Transponder(Load13)":p1l:w
+	Load13_Cable:w1:e -- Load13:p1l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J15:p24r:e -- Load13_Cable:w2:w
-	Load13_Cable:w2:e -- "Transponder(Load13)":p2l:w
+	Load13_Cable:w2:e -- Load13:p2l:w
 	Load13_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -4912,7 +4912,7 @@ graph {
     <td>
      1:RD:LOAD13
     </td>
-    <td>Transponder(Load13):1:LOAD13</td>
+    <td>Load13:1:LOAD13</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -4928,7 +4928,7 @@ graph {
     <td>
      2:BK:CHASS_GND
     </td>
-    <td>Transponder(Load13):2:CHASS_GND</td>
+    <td>Load13:2:CHASS_GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -5004,10 +5004,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J15:p11r:e -- Load15_Cable:w1:w
-	Load15_Cable:w1:e -- "Dashboard(Load15)":p1l:w
+	Load15_Cable:w1:e -- Dashboard_Load15:p1l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J15:p34r:e -- Load15_Cable:w2:w
-	Load15_Cable:w2:e -- "Dashboard(Load15)":p2l:w
+	Load15_Cable:w2:e -- Dashboard_Load15:p2l:w
 	Load15_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -5028,7 +5028,7 @@ graph {
     <td>
      1:RD:LOAD15
     </td>
-    <td>Dashboard(Load15):1:LOAD15</td>
+    <td>Dashboard_Load15:1:LOAD15</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -5044,7 +5044,7 @@ graph {
     <td>
      2:BK:CHASS_GND
     </td>
-    <td>Dashboard(Load15):2:CHASS_GND</td>
+    <td>Dashboard_Load15:2:CHASS_GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -5294,10 +5294,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J15:p18r:e -- Load21_Cable:w1:w
-	Load21_Cable:w1:e -- "MocLeft(Load21)":p1l:w
+	Load21_Cable:w1:e -- Load21:p1l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J15:p36r:e -- Load21_Cable:w2:w
-	Load21_Cable:w2:e -- "MocLeft(Load21)":p2l:w
+	Load21_Cable:w2:e -- Load21:p2l:w
 	Load21_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -5318,7 +5318,7 @@ graph {
     <td>
      1:RD:LOAD21
     </td>
-    <td>MocLeft(Load21):1:LOAD21</td>
+    <td>Load21:1:LOAD21</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -5334,7 +5334,7 @@ graph {
     <td>
      2:BK:CHASS_GND
     </td>
-    <td>MocLeft(Load21):2:CHASS_GND</td>
+    <td>Load21:2:CHASS_GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -5352,10 +5352,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	ConnectorBoard_J15:p19r:e -- Load24_Cable:w1:w
-	Load24_Cable:w1:e -- "MocRight(Load24)":p1l:w
+	Load24_Cable:w1:e -- Load24:p1l:w
 	edge [color="#000000:#000000:#000000"]
 	ConnectorBoard_J15:p31r:e -- Load24_Cable:w2:w
-	Load24_Cable:w2:e -- "MocRight(Load24)":p2l:w
+	Load24_Cable:w2:e -- Load24:p2l:w
 	Load24_Cable [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -5376,7 +5376,7 @@ graph {
     <td>
      1:RD:LOAD24
     </td>
-    <td>MocRight(Load24):1:LOAD24</td>
+    <td>Load24:1:LOAD24</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -5392,7 +5392,7 @@ graph {
     <td>
      2:BK:CHASS_GND
     </td>
-    <td>MocRight(Load24):2:CHASS_GND</td>
+    <td>Load24:2:CHASS_GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">

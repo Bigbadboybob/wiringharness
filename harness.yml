@@ -157,32 +157,32 @@ connectors:
     pincount:  2
     pinlabels: [LOAD7, CHASS_GND]
 
-  Load8:
+  Moc_Right_Load8:
     type: output
     pincount:  2
     pinlabels: [LOAD8, CHASS_GND]
 
-  Load9:
+  Transponder_Load9:
     type: output
     pincount:  2
     pinlabels: [LOAD9, CHASS_GND]
 
-  Load10:
+  Vecnav_Load10:
     type: output
     pincount:  2
     pinlabels: [LOAD10, CHASS_GND]
 
-  Load11:
+  Moc_Left_Load11:
     type: output
     pincount:  2
     pinlabels: [LOAD11, CHASS_GND]
 
-  Load12:
+  AMS_Master_Load12:
     type: output
     pincount:  2
     pinlabels: [LOAD12, CHASS_GND]
 
-  Transponder(Load13):
+  Load13:
     type: output
     pincount:  2
     pinlabels: [LOAD13, CHASS_GND]
@@ -192,7 +192,7 @@ connectors:
     pincount:  2
     pinlabels: [LOAD14, CHASS_GND]
 
-  Dashboard(Load15):
+  Dashboard_Load15:
     type: output
     pincount:  2
     pinlabels: [LOAD15, CHASS_GND]
@@ -217,12 +217,12 @@ connectors:
     pincount:  2
     pinlabels: [LOAD20, CHASS_GND]
 
-  MocLeft(Load21):
+  Load21:
     type: output
     pincount:  2
     pinlabels: [LOAD21, CHASS_GND]
 
-  MocRight(Load24):
+  Load24:
     type: output
     pincount:  2
     pinlabels: [LOAD24, CHASS_GND]
@@ -691,29 +691,34 @@ connections:
   - CAN_AUX: [1, 2]
 
 -
+  - ConnectorBoard_J15: [4, 21]
+  - Load8_Cable: [1, 2]
+  - Moc_Right_Load8: [1, 2]
+
+-
   - ConnectorBoard_J15: [5, 22]
   - Load9_Cable: [1, 2]
-  - Load9: [1, 2]
+  - Transponder_Load9: [1, 2]
 
 -
   - ConnectorBoard_J15: [6, 37]
   - Load10_Cable: [1, 2]
-  - Load10: [1, 2]
+  - Vecnav_Load10: [1, 2]
 
 -
   - ConnectorBoard_J15: [7, 23]
   - Load11_Cable: [1, 2]
-  - Load11: [1, 2]
+  - Moc_Left_Load11: [1, 2]
 
 -
   - ConnectorBoard_J15: [8, 33]
   - Load12_Cable: [1, 2]
-  - Load12: [1, 2]
+  - AMS_Master_Load12: [1, 2]
 
 -
   - ConnectorBoard_J15: [9, 24]
   - Load13_Cable: [1, 2]
-  - Transponder(Load13): [1, 2]
+  - Load13: [1, 2]
 
 -
   - ConnectorBoard_J15: [10, 25]
@@ -723,7 +728,7 @@ connections:
 -
   - ConnectorBoard_J15: [11, 34]
   - Load15_Cable: [1, 2]
-  - Dashboard(Load15): [1, 2]
+  - Dashboard_Load15: [1, 2]
 
 -
   - ConnectorBoard_J15: [14, 26]
@@ -748,22 +753,18 @@ connections:
 -
   - ConnectorBoard_J15: [18, 36]
   - Load21_Cable: [1, 2]
-  - MocLeft(Load21): [1, 2]
+  - Load21: [1, 2]
 
 -
   - ConnectorBoard_J15: [19, 31]
   - Load24_Cable: [1, 2]
-  - MocRight(Load24): [1, 2]
+  - Load24: [1, 2]
 
 -
   - ConnectorBoard_J15: [20, 32]
   - Load7_Cable: [1, 2]
   - Load7: [1, 2]
 
--
-  - ConnectorBoard_J15: [4, 21]
-  - Load8_Cable: [1, 2]
-  - Load8: [1, 2]
 #End J15
 
 #J16
